@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D2678AE9C63EA9553940D07 /* Pods_Mobile_Data_Usage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30552DA01320D882618791B4 /* Pods_Mobile_Data_Usage.framework */; };
+		A133353F21EFCC7800C8A4E9 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */; };
+		A133354121EFCCB400C8A4E9 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133354021EFCCB400C8A4E9 /* DataTableViewCell.swift */; };
+		A1360D5A21F026CD00FA0E26 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1360D5921F026CD00FA0E26 /* FoldingCell.swift */; };
+		A1D1F66A21F167AF008892B6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F66921F167AF008892B6 /* API.swift */; };
+		A1D1F66C21F1742A008892B6 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F66B21F1742A008892B6 /* Record.swift */; };
+		A1D1F66E21F17458008892B6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F66D21F17458008892B6 /* Response.swift */; };
+		A1D1F67021F177C2008892B6 /* YearRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1F66F21F177C2008892B6 /* YearRecord.swift */; };
+		A1EDF50D21EFC44800351B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDF50C21EFC44800351B89 /* AppDelegate.swift */; };
+		A1EDF51221EFC44900351B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EDF51021EFC44900351B89 /* Main.storyboard */; };
+		A1EDF51521EFC44900351B89 /* Mobile_Data_Usage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1EDF51321EFC44900351B89 /* Mobile_Data_Usage.xcdatamodeld */; };
+		A1EDF51721EFC44B00351B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EDF51621EFC44B00351B89 /* Assets.xcassets */; };
+		A1EDF51A21EFC44B00351B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EDF51821EFC44B00351B89 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14F7943A0F7BE6DA5ED53891 /* Pods-Mobile Data Usage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.debug.xcconfig"; sourceTree = "<group>"; };
+		30552DA01320D882618791B4 /* Pods_Mobile_Data_Usage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Data_Usage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
+		A133354021EFCCB400C8A4E9 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		A1360D5921F026CD00FA0E26 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
+		A1D1F66921F167AF008892B6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A1D1F66B21F1742A008892B6 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		A1D1F66D21F17458008892B6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		A1D1F66F21F177C2008892B6 /* YearRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearRecord.swift; sourceTree = "<group>"; };
+		A1EDF50921EFC44800351B89 /* Mobile Data Usage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Data Usage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EDF50C21EFC44800351B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1EDF51121EFC44900351B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1EDF51421EFC44900351B89 /* Mobile_Data_Usage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mobile_Data_Usage.xcdatamodel; sourceTree = "<group>"; };
+		A1EDF51621EFC44B00351B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1EDF51921EFC44B00351B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1EDF51B21EFC44B00351B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60B83F9EA1B02F46A49C7C6 /* Pods-Mobile Data Usage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1EDF50621EFC44800351B89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D2678AE9C63EA9553940D07 /* Pods_Mobile_Data_Usage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34F42498F52953C0817F45D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14F7943A0F7BE6DA5ED53891 /* Pods-Mobile Data Usage.debug.xcconfig */,
+				B60B83F9EA1B02F46A49C7C6 /* Pods-Mobile Data Usage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D7B248E58474B2EE2866B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30552DA01320D882618791B4 /* Pods_Mobile_Data_Usage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0F8B5121F207D000ED8340 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A133354021EFCCB400C8A4E9 /* DataTableViewCell.swift */,
+				A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		A133353B21EFCB3300C8A4E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDF51021EFC44900351B89 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A133353C21EFCB3300C8A4E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1F66B21F1742A008892B6 /* Record.swift */,
+				A1D1F66F21F177C2008892B6 /* YearRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1360D5521F0255A00FA0E26 /* IntegrationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1F66821F16790008892B6 /* API */,
+				A1360D5621F0255A00FA0E26 /* ThirdPartyLibrary */,
+			);
+			path = IntegrationLayer;
+			sourceTree = "<group>";
+		};
+		A1360D5621F0255A00FA0E26 /* ThirdPartyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A1360D5921F026CD00FA0E26 /* FoldingCell.swift */,
+			);
+			path = ThirdPartyLibrary;
+			sourceTree = "<group>";
+		};
+		A1D1F66821F16790008892B6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1F66D21F17458008892B6 /* Response.swift */,
+				A1D1F66921F167AF008892B6 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A1EDF50021EFC44800351B89 = {
+			isa = PBXGroup;
+			children = (
+				A1EDF50B21EFC44800351B89 /* Mobile Data Usage */,
+				A1EDF50A21EFC44800351B89 /* Products */,
+				34F42498F52953C0817F45D0 /* Pods */,
+				4D7B248E58474B2EE2866B39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1EDF50A21EFC44800351B89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1EDF50921EFC44800351B89 /* Mobile Data Usage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1EDF50B21EFC44800351B89 /* Mobile Data Usage */ = {
+			isa = PBXGroup;
+			children = (
+				6E0F8B5121F207D000ED8340 /* View Controller */,
+				A1360D5521F0255A00FA0E26 /* IntegrationLayer */,
+				A133353C21EFCB3300C8A4E9 /* Models */,
+				A133353B21EFCB3300C8A4E9 /* Views */,
+				A1EDF50C21EFC44800351B89 /* AppDelegate.swift */,
+				A1EDF51621EFC44B00351B89 /* Assets.xcassets */,
+				A1EDF51821EFC44B00351B89 /* LaunchScreen.storyboard */,
+				A1EDF51B21EFC44B00351B89 /* Info.plist */,
+				A1EDF51321EFC44900351B89 /* Mobile_Data_Usage.xcdatamodeld */,
+			);
+			path = "Mobile Data Usage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1EDF50821EFC44800351B89 /* Mobile Data Usage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1EDF51E21EFC44B00351B89 /* Build configuration list for PBXNativeTarget "Mobile Data Usage" */;
+			buildPhases = (
+				69249AC3096B224C80B99520 /* [CP] Check Pods Manifest.lock */,
+				A1EDF50521EFC44800351B89 /* Sources */,
+				A1EDF50621EFC44800351B89 /* Frameworks */,
+				A1EDF50721EFC44800351B89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Data Usage";
+			productName = "Mobile Data Usage";
+			productReference = A1EDF50921EFC44800351B89 /* Mobile Data Usage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1EDF50121EFC44800351B89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Personal;
+				TargetAttributes = {
+					A1EDF50821EFC44800351B89 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = A1EDF50421EFC44800351B89 /* Build configuration list for PBXProject "Mobile Data Usage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1EDF50021EFC44800351B89;
+			productRefGroup = A1EDF50A21EFC44800351B89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1EDF50821EFC44800351B89 /* Mobile Data Usage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1EDF50721EFC44800351B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EDF51A21EFC44B00351B89 /* LaunchScreen.storyboard in Resources */,
+				A1EDF51721EFC44B00351B89 /* Assets.xcassets in Resources */,
+				A1EDF51221EFC44900351B89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69249AC3096B224C80B99520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mobile Data Usage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1EDF50521EFC44800351B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A133353F21EFCC7800C8A4E9 /* DataListViewController.swift in Sources */,
+				A1360D5A21F026CD00FA0E26 /* FoldingCell.swift in Sources */,
+				A1EDF51521EFC44900351B89 /* Mobile_Data_Usage.xcdatamodeld in Sources */,
+				A1EDF50D21EFC44800351B89 /* AppDelegate.swift in Sources */,
+				A1D1F66E21F17458008892B6 /* Response.swift in Sources */,
+				A1D1F66C21F1742A008892B6 /* Record.swift in Sources */,
+				A1D1F66A21F167AF008892B6 /* API.swift in Sources */,
+				A1D1F67021F177C2008892B6 /* YearRecord.swift in Sources */,
+				A133354121EFCCB400C8A4E9 /* DataTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1EDF51021EFC44900351B89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1EDF51121EFC44900351B89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1EDF51821EFC44B00351B89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1EDF51921EFC44B00351B89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1EDF51C21EFC44B00351B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1EDF51D21EFC44B00351B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1EDF51F21EFC44B00351B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F7943A0F7BE6DA5ED53891 /* Pods-Mobile Data Usage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data Usage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Mobile-Data-Usage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1EDF52021EFC44B00351B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60B83F9EA1B02F46A49C7C6 /* Pods-Mobile Data Usage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data Usage/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.Mobile-Data-Usage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1EDF50421EFC44800351B89 /* Build configuration list for PBXProject "Mobile Data Usage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1EDF51C21EFC44B00351B89 /* Debug */,
+				A1EDF51D21EFC44B00351B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1EDF51E21EFC44B00351B89 /* Build configuration list for PBXNativeTarget "Mobile Data Usage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1EDF51F21EFC44B00351B89 /* Debug */,
+				A1EDF52021EFC44B00351B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1EDF51321EFC44900351B89 /* Mobile_Data_Usage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1EDF51421EFC44900351B89 /* Mobile_Data_Usage.xcdatamodel */,
+			);
+			currentVersion = A1EDF51421EFC44900351B89 /* Mobile_Data_Usage.xcdatamodel */;
+			path = Mobile_Data_Usage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1EDF50121EFC44800351B89 /* Project object */;
+}
