@@ -53,11 +53,11 @@ class DataTableViewCell: FoldingCell {
         
         if yearRecord.q4Value != nil {
             
-            self.lblQ4Value.text = "Total \(yearRecord.year!) →  \(String(format: "%.4f",yearRecord.q4Value))"
+            self.lblQ4Value.text = "Total Volume \(yearRecord.year!) →  \(String(format: "%.4f",yearRecord.q4Value))"
              self.lblTotalValume.text =  String(format: "%.4f",yearRecord.q4Value)
 
         }else{
-            self.lblQ4Value.text = "Total \(yearRecord.year!) → TBA"
+            self.lblQ4Value.text = "Total Volume \(yearRecord.year!) → TBA"
 
         }
         
