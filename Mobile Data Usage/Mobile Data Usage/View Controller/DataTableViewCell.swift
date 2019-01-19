@@ -116,15 +116,29 @@ class DataTableViewCell: FoldingCell {
         }else{
              self.lblQ4Relative.text = "-"
         }
-
         
-
+        let res1 = lblQ1Relative.text!.contains { ["-"].contains( $0 ) }
+        let res2 = lblQ2Relative.text!.contains { ["-"].contains( $0 ) }
+        let res3 = lblQ3Relative.text!.contains { ["-"].contains( $0 ) }
+        let res4 = lblQ4Relative.text!.contains { ["-"].contains( $0 ) }
         
-       
+        if res1 {
+            lblQ1Relative.textColor = UIColor.yellow
+        }
         
+        if res2 {
+            lblQ2Relative.textColor = UIColor.yellow
+        }
         
+        if res3 {
+            lblQ3Relative.textColor = UIColor.yellow
+        }
+        
+        if res4 {
+            lblQ4Relative.textColor = UIColor.yellow
+        }
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
