@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D2678AE9C63EA9553940D07 /* Pods_Mobile_Data_Usage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30552DA01320D882618791B4 /* Pods_Mobile_Data_Usage.framework */; };
+		6EF6CF1721F23A6C0093DCE3 /* Mobile_Data_UsageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6CF1621F23A6C0093DCE3 /* Mobile_Data_UsageTests.swift */; };
+		6EF6CF2521F23A800093DCE3 /* Mobile_Data_UsageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6CF2421F23A800093DCE3 /* Mobile_Data_UsageUITests.swift */; };
 		A133353F21EFCC7800C8A4E9 /* DataListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */; };
 		A133354121EFCCB400C8A4E9 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A133354021EFCCB400C8A4E9 /* DataTableViewCell.swift */; };
 		A1360D5A21F026CD00FA0E26 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1360D5921F026CD00FA0E26 /* FoldingCell.swift */; };
@@ -22,9 +24,32 @@
 		A1EDF51A21EFC44B00351B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EDF51821EFC44B00351B89 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6EF6CF1921F23A6C0093DCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1EDF50121EFC44800351B89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1EDF50821EFC44800351B89;
+			remoteInfo = "Mobile Data Usage";
+		};
+		6EF6CF2721F23A800093DCE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1EDF50121EFC44800351B89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1EDF50821EFC44800351B89;
+			remoteInfo = "Mobile Data Usage";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		14F7943A0F7BE6DA5ED53891 /* Pods-Mobile Data Usage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Data Usage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Data Usage/Pods-Mobile Data Usage.debug.xcconfig"; sourceTree = "<group>"; };
 		30552DA01320D882618791B4 /* Pods_Mobile_Data_Usage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Data_Usage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF6CF1421F23A6C0093DCE3 /* Mobile Data UsageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Data UsageTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF6CF1621F23A6C0093DCE3 /* Mobile_Data_UsageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Data_UsageTests.swift; sourceTree = "<group>"; };
+		6EF6CF1821F23A6C0093DCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF6CF2221F23A800093DCE3 /* Mobile Data UsageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Data UsageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF6CF2421F23A800093DCE3 /* Mobile_Data_UsageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile_Data_UsageUITests.swift; sourceTree = "<group>"; };
+		6EF6CF2621F23A800093DCE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListViewController.swift; sourceTree = "<group>"; };
 		A133354021EFCCB400C8A4E9 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		A1360D5921F026CD00FA0E26 /* FoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
@@ -43,6 +68,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6EF6CF1121F23A6C0093DCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EF6CF1F21F23A800093DCE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1EDF50621EFC44800351B89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +117,24 @@
 				A133353E21EFCC7800C8A4E9 /* DataListViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		6EF6CF1521F23A6C0093DCE3 /* Mobile Data UsageTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EF6CF1621F23A6C0093DCE3 /* Mobile_Data_UsageTests.swift */,
+				6EF6CF1821F23A6C0093DCE3 /* Info.plist */,
+			);
+			path = "Mobile Data UsageTests";
+			sourceTree = "<group>";
+		};
+		6EF6CF2321F23A800093DCE3 /* Mobile Data UsageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EF6CF2421F23A800093DCE3 /* Mobile_Data_UsageUITests.swift */,
+				6EF6CF2621F23A800093DCE3 /* Info.plist */,
+			);
+			path = "Mobile Data UsageUITests";
 			sourceTree = "<group>";
 		};
 		A133353B21EFCB3300C8A4E9 /* Views */ = {
@@ -127,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				A1EDF50B21EFC44800351B89 /* Mobile Data Usage */,
+				6EF6CF1521F23A6C0093DCE3 /* Mobile Data UsageTests */,
+				6EF6CF2321F23A800093DCE3 /* Mobile Data UsageUITests */,
 				A1EDF50A21EFC44800351B89 /* Products */,
 				34F42498F52953C0817F45D0 /* Pods */,
 				4D7B248E58474B2EE2866B39 /* Frameworks */,
@@ -137,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				A1EDF50921EFC44800351B89 /* Mobile Data Usage.app */,
+				6EF6CF1421F23A6C0093DCE3 /* Mobile Data UsageTests.xctest */,
+				6EF6CF2221F23A800093DCE3 /* Mobile Data UsageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +221,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6EF6CF1321F23A6C0093DCE3 /* Mobile Data UsageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EF6CF1B21F23A6C0093DCE3 /* Build configuration list for PBXNativeTarget "Mobile Data UsageTests" */;
+			buildPhases = (
+				6EF6CF1021F23A6C0093DCE3 /* Sources */,
+				6EF6CF1121F23A6C0093DCE3 /* Frameworks */,
+				6EF6CF1221F23A6C0093DCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EF6CF1A21F23A6C0093DCE3 /* PBXTargetDependency */,
+			);
+			name = "Mobile Data UsageTests";
+			productName = "Mobile Data UsageTests";
+			productReference = 6EF6CF1421F23A6C0093DCE3 /* Mobile Data UsageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EF6CF2121F23A800093DCE3 /* Mobile Data UsageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EF6CF2921F23A800093DCE3 /* Build configuration list for PBXNativeTarget "Mobile Data UsageUITests" */;
+			buildPhases = (
+				6EF6CF1E21F23A800093DCE3 /* Sources */,
+				6EF6CF1F21F23A800093DCE3 /* Frameworks */,
+				6EF6CF2021F23A800093DCE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EF6CF2821F23A800093DCE3 /* PBXTargetDependency */,
+			);
+			name = "Mobile Data UsageUITests";
+			productName = "Mobile Data UsageUITests";
+			productReference = 6EF6CF2221F23A800093DCE3 /* Mobile Data UsageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A1EDF50821EFC44800351B89 /* Mobile Data Usage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1EDF51E21EFC44B00351B89 /* Build configuration list for PBXNativeTarget "Mobile Data Usage" */;
@@ -184,10 +281,18 @@
 		A1EDF50121EFC44800351B89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Personal;
 				TargetAttributes = {
+					6EF6CF1321F23A6C0093DCE3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1EDF50821EFC44800351B89;
+					};
+					6EF6CF2121F23A800093DCE3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1EDF50821EFC44800351B89;
+					};
 					A1EDF50821EFC44800351B89 = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -207,11 +312,27 @@
 			projectRoot = "";
 			targets = (
 				A1EDF50821EFC44800351B89 /* Mobile Data Usage */,
+				6EF6CF1321F23A6C0093DCE3 /* Mobile Data UsageTests */,
+				6EF6CF2121F23A800093DCE3 /* Mobile Data UsageUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6EF6CF1221F23A6C0093DCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EF6CF2021F23A800093DCE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1EDF50721EFC44800351B89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +367,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6EF6CF1021F23A6C0093DCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF6CF1721F23A6C0093DCE3 /* Mobile_Data_UsageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EF6CF1E21F23A800093DCE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF6CF2521F23A800093DCE3 /* Mobile_Data_UsageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1EDF50521EFC44800351B89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +400,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EF6CF1A21F23A6C0093DCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1EDF50821EFC44800351B89 /* Mobile Data Usage */;
+			targetProxy = 6EF6CF1921F23A6C0093DCE3 /* PBXContainerItemProxy */;
+		};
+		6EF6CF2821F23A800093DCE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1EDF50821EFC44800351B89 /* Mobile Data Usage */;
+			targetProxy = 6EF6CF2721F23A800093DCE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1EDF51021EFC44900351B89 /* Main.storyboard */ = {
@@ -284,6 +434,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6EF6CF1C21F23A6C0093DCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data UsageTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.Mobile-Data-UsageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Data Usage.app/Mobile Data Usage";
+			};
+			name = Debug;
+		};
+		6EF6CF1D21F23A6C0093DCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data UsageTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.Mobile-Data-UsageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Data Usage.app/Mobile Data Usage";
+			};
+			name = Release;
+		};
+		6EF6CF2A21F23A800093DCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data UsageUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.Mobile-Data-UsageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Data Usage";
+			};
+			name = Debug;
+		};
+		6EF6CF2B21F23A800093DCE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobile Data UsageUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.Mobile-Data-UsageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobile Data Usage";
+			};
+			name = Release;
+		};
 		A1EDF51C21EFC44B00351B89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +669,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6EF6CF1B21F23A6C0093DCE3 /* Build configuration list for PBXNativeTarget "Mobile Data UsageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF6CF1C21F23A6C0093DCE3 /* Debug */,
+				6EF6CF1D21F23A6C0093DCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EF6CF2921F23A800093DCE3 /* Build configuration list for PBXNativeTarget "Mobile Data UsageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EF6CF2A21F23A800093DCE3 /* Debug */,
+				6EF6CF2B21F23A800093DCE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1EDF50421EFC44800351B89 /* Build configuration list for PBXProject "Mobile Data Usage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

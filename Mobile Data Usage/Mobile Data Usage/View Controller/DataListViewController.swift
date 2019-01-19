@@ -23,26 +23,21 @@ class DataListViewController: UIViewController {
     @IBOutlet weak var tblDataList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        API.searchMobileData { (arrRecords, error) in
-            if(arrRecords != nil){
-                self.finalRecords =  (arrRecords?.filter({ (yearRecord) -> Bool in
-                    if(Int(yearRecord.year)! > 2007){
-                        return  true
-                    } else{
-                        return false
-                    }
-                }))!
-              //  self.finalRecords = arrRecords.reverse()
-                DispatchQueue.main.async {
-                    self.setup()
-                    self.tblDataList.reloadData()
-                }
-            }
-            
-            self.finalRecords.reverse()
-        }
-        //setup()
+        
         // Do any additional setup after loading the view.
+        if API.isNetworkConnected(){
+            getMobileData()
+        }else {
+            DispatchQueue.main.async {
+                
+                let alert = UIAlertController(title: "Network connection Failed", message: "Please try again later!", preferredStyle: .alert)
+                
+                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alert.addAction(cancelAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
 
@@ -55,6 +50,28 @@ class DataListViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //API called to get the data
+    func getMobileData(){
+        API.searchMobileData { (arrRecords, error) in
+            if(arrRecords != nil){
+                self.finalRecords =  (arrRecords?.filter({ (yearRecord) -> Bool in
+                    if(Int(yearRecord.year)! > 2007){
+                        return  true
+                    } else{
+                        return false
+                    }
+                }))!
+                DispatchQueue.main.async {
+                    self.setup()
+                    self.tblDataList.reloadData()
+                }
+            }
+            
+            self.finalRecords.reverse()
+        }
+    }
+    
     private func setup() {
         cellHeights = Array(repeating: Const.closeCellHeight, count: finalRecords.count)
         tblDataList.estimatedRowHeight = Const.closeCellHeight

@@ -8,6 +8,8 @@
 
 import UIKit
 import Network
+import SystemConfiguration
+
 //import Alamofire
 let baseUrl =  "https://data.gov.sg/api"
 let resourceId =  "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
@@ -16,6 +18,20 @@ class API: NSObject {
     typealias responseDict = (_ result: [String:Any]?, _ error: NSError?) -> Void
     typealias responseYearRecord = (_ result: [YearRecord]?, _ error: NSError?) -> Void
 
+    class func showAlert (message:String, withTitle:String, vc:UIViewController) {
+        let alertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: NSLocalizedString("title_ok", comment: ""), style: UIAlertAction.Style.default)
+        {
+            (result : UIAlertAction) -> Void in
+            //print("You pressed OK")
+        }
+        alertController.addAction(okAction)
+        vc.present(alertController, animated: true, completion: nil)
+    }
+
+    
+    
     class func searchMobileData(responseRec:@escaping responseYearRecord){
         let strAPIURL = baseUrl + "/action/datastore_search" + "?resource_id=" + resourceId
         callGetAPI(urlString: strAPIURL) { (response, error) in
@@ -138,6 +154,26 @@ class API: NSObject {
         }
         task.resume()
     }
-
+    
+    class func isNetworkConnected() -> Bool
+    {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        var flags = SCNetworkReachabilityFlags()
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
+    }
 }
+
 
